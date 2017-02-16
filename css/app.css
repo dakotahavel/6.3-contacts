@@ -5770,8 +5770,16 @@ body {
   background-color: black;
   color: RoyalBlue; }
 
+.login-bg {
+  background-color: #1D1D1D;
+  background-image: url("http://lh6.ggpht.com/sVO1vAm9rasIC4A1T9GbbZXS7JipUBhSf37met98o1aEqSr3wCjexn8rSYKYuTT7Ygm7O7prfjljWQ8zB39UUfyuTdJS0zxb8nDyJQ=s0");
+  background-size: cover; }
+
+.container {
+  border-radius: 3%; }
+
 .login {
-  margin-top: 5%;
+  padding-top: 3%;
   color: LimeGreen; }
 
 h1 {
@@ -5782,9 +5790,13 @@ h1 {
   color: RoyalBlue;
   margin-bottom: 10px; }
 
+.submit-btn {
+  background-color: #1D1D1D; }
+
 .well {
   background-color: black; }
 
 .app li {
   background-color: black; }
+
 /*# sourceMappingURL=app.css.map */
