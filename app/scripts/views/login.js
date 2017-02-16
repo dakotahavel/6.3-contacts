@@ -34,7 +34,7 @@ var LoginView = Backbone.View.extend({
     var validName = this.collection.findWhere({name: $username});
     var validPass;
     validName ? validPass = validName.get('password') : $('#warn').html(' Invalid Username and/or ');
-    $password == validPass ? ($('.FOUO').fadeIn(2500), $('.login-screen').hide()) : $('#warn').append(' Invalid Password ');
+    $password == validPass ? ($('.FOUO').fadeIn(2500), $('.login-screen').hide(), $('body').removeClass('login-bg')): $('#warn').append(' Invalid Password ');
   }
   , render: function(){
     this.$el.html(this.template);

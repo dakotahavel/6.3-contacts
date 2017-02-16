@@ -4,9 +4,12 @@ var views = require('./views/contact.js');
 var loginModels = require('./models/login.js');
 var loginViews = require('./views/login.js');
 
+$('.login-screen').show()
 $('.FOUO').hide();
 // DOM Ready
 $(function(){
+$('.FOUO').hide();
+
   // instanciate users collection
   var authUsers = new loginModels.LoginCollection();
   // render login form
