@@ -18,13 +18,13 @@ var ContactFormView = Backbone.View.extend({
     var $name = $('#name');
     var $alias = $('#alias');
     var $rank = $('#rank');
-    var $age = $('#age');
+    var $agency = $('#agency');
     var $nationality = $('#nationality');
-    this.collection.create({name: $name.val(),alias: $alias.val(),rank: $rank.val(),age: $age.val(),nationality: $nationality.val()});
+    this.collection.create({name: $name.val(),alias: $alias.val(),rank: $rank.val(),agency: $agency.val(),nationality: $nationality.val()});
     $name.val('');
     $alias.val('');
     $rank.val('');
-    $age.val('');
+    $agency.val('');
     $nationality.val('');
 
   }
@@ -46,8 +46,8 @@ var ContactListView = Backbone.View.extend({
   , render: function(){
     return this;
   }
-  , renderContact: function(addedContactModel){
-    var contactListItem = new ContactListItemView({model: addedContactModel})
+  , renderContact: function(contact){
+    var contactListItem = new ContactListItemView({model: contact})
     this.$el.prepend(contactListItem.render().el);
     return this;
   }
